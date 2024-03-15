@@ -1,0 +1,146 @@
+.footerContainer {
+  background-color: #0f4997;
+  color: white;
+}
+
+.footerContainerInner {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.footerContainerLeft,
+.footerContainerRigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogo {
+  height: 51px;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.followContainer {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.footerSocialIcon {
+  font-size: 24px;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.footerLinksContainerInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footerLink {
+  list-style: none;
+}
+
+.clickToBecomeFriend {
+  border: solid 1px white;
+  padding: 5px 7px;
+}
+
+.footerCopyrights {
+  padding: 1rem 2.5rem;
+  background-color: #1052ab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.newsLetterContainer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .footerContainerInner {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footerLinksContainer {
+    font-size: 16px;
+  }
+
+  .footerContainerLeft {
+    align-items: start;
+  }
+
+  .footerLinksContainerInner {
+    justify-content: start;
+  }
+
+  .newsLetterContainer {
+    display: block;
+  }
+
+  .joinNewsletterHeading {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .joinNewsletterText {
+    font-size: 16px;
+    max-width: 341px;
+    margin-bottom: 10px;
+  }
+
+  .footerInputContainer {
+    display: flex;
+    gap: 12px;
+    border-radius: 10px;
+  }
+
+  .footerEmail {
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 292px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .footerEmail:focus {
+    outline: none;
+  }
+
+  .footerSubscribeButton {
+    background-color: #ff0000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .clickToBecomeFriend {
+    margin-top: auto;
+  }
+
+  .footerCopyrights {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+

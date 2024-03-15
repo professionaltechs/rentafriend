@@ -1,0 +1,89 @@
+.navbarContainer {
+  background-color: #0f4997;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.5% 8%;
+}
+
+.menuButton {
+  color: white;
+  font-size: 25px;
+}
+
+.navbarLogo {
+  width: 220px;
+  height: auto;
+  position: relative;
+  bottom: 2px;
+}
+
+.navLinksContainer {
+  display: none;
+}
+
+.navLinksInner {
+  display: flex;
+  gap: 25px;
+}
+
+.navLink {
+  list-style: none;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinNowLink {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    padding: 5px 50px 15px 50px;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .navLinksContainer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .navLink {
+    font-size: 18px;
+  }
+
+  .joinNowLink {
+    display: block;
+    background-color: #ff6507;
+    padding: 9px 25px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbarContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media(min-width:1280px) {
+    .navbarContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+}
